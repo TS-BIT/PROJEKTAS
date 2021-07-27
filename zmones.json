@@ -1,0 +1,26 @@
+[
+{
+"vardas": "Jonas",
+"pavardė": "Jonaitis",
+"telefonai": "+37069920000",
+"email": "jonas@gmail.com",
+"skolingas": 1988,
+"adresas": {
+    "miestas": "Vilnius",
+    "gatve": "Gedinžmino",
+    "namas": 9
+    }
+},
+{
+    "vardas": "Jonas",
+    "pavardė": "Jonaitis",
+    "telefonai": "+37069920000",
+    "email": "jonas@gmail.com",
+    "skolingas": 1988,
+    "adresas": {
+        "miestas": "Vilnius",
+        "gatve": "Gedinžmino",
+        "namas": 9
+    }
+}
+]
