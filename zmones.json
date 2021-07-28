@@ -7,20 +7,29 @@
 "skolingas": 1988,
 "adresas": {
     "miestas": "Vilnius",
-    "gatve": "Gedinžmino",
+    "gatve": "Gedimino",
     "namas": 9
     }
 },
 {
-    "vardas": "Jonas",
-    "pavardė": "Jonaitis",
-    "telefonai": "+37069920000",
-    "email": "jonas@gmail.com",
-    "skolingas": 1988,
-    "adresas": {
-        "miestas": "Vilnius",
-        "gatve": "Gedinžmino",
-        "namas": 9
-    }
+    "vardas": "Petras",
+    "pavardė": "Petraitis",
+    "telefonai": "+37069811111",
+    "email": [
+        "petras@gmail.com",
+        "p@darbas.lt",
+        "petriukas@namai.lt"
+    ],
+    "gimimoMetai": 1983
+},
+{"vardas": "Antanas",
+    "pavardė": "Antanaitis",
+    "telefonai": [
+        "+37063512345",
+        "+37068265432"
+    ],
+    "email": "antanas@gmail.com",
+    "gimimoMetai": 2001
 }
+
 ]
