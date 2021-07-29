@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "type": "module",
-  "scripts": {
+   "scripts": {
     "start": "node ./src/index1.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
