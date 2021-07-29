@@ -24,3 +24,9 @@ class Puodukas {
     servizas: Puodukas
     };
     console.log(module);
+
+/*
+    module.exports = { 
+        Puodukas
+     };
+*/
