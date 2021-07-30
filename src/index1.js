@@ -21,10 +21,25 @@ console.log("klaida", err);
     // viskas vyksta vieno evento ribose
     // promisai rimta prielipa prie JS kaip ir setTimeout
 
-    /*
-    async function suma (a, b) {
-        return a + b;
-    }
+// ANTRAS PVZ:
+
+/*
+
+async function suma (a, b) {
+    return a + b;   
+}
+
+let reismesPromisas = suma(1, 2);
+console.log(reiksmesPromisas);
+
+reiksmesPromisas.then(reiksme => {
+    console.log(reiksmes + 4);
+});
+
+let
+
+
+
     let rez = await suma(1, 2) + await suma(4, 5);
     console.log(rez + 4);
     console.log("labas");
@@ -99,7 +114,7 @@ console.log("klaida", err);
 
     }
 
-// kiekvienas await sukaido musu programa i thenús  
+// kiekvienas await sukaido musu programa i then'us
 
 /*
 import * as fs from "fs/promises";
@@ -121,6 +136,56 @@ perskaityti abu failus, suparsinti, apjungti i viena masyva
 surusiuoti masyva pagal string'o ilgi
 atspausdinti masyva
 */
+
+
+
+/* 
+function suma (a, b) {
+    return a + b;
+}
+console.log(suma(1, 2));
+
+// Ats: 3
+*/
+/*
+async function suma (a, b) {
+    return a + b;
+
+
+*/
+
+//PIRMAS PVZ:
+
+
+/*
+function suma (a, b) {
+    return a + b;
+}
+
+function sumaPromise (a, b) {
+    return new Promise((resolve, reject) => {
+        resolve(suma(a, b));
+    });
+}
+// asyn grazina promisa, tap kaip f-j su promisu
+async function sumaAsync (a, b) {
+    return a + b;
+}
+
+console.log(suma(1, 2));
+console.log(sumaPromise(1, 2));
+console.log(sumaAsync(1, 2));
+
+// Ats: 3; {3}; {3}
+*/
+
+// specialus modifikatorius async f- j pazymeti async automatiskai grazina promisa (resolvinta arba redzektinta))
+
+
+    let rez = await suma(1, 2) + await suma(4, 5);
+    console.log(rez + 4);
+    console.log("labas");
+    */
 
 
 
