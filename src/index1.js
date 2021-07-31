@@ -7,7 +7,7 @@ fs.readFile("./a.txt")
 })
 .catch
 */
-
+/*
 import * as fs from "fs/promises";
 try {
 let tekstas = await fs.readFile("./a.txt");
@@ -15,7 +15,7 @@ console.log("" + tekstas);
 } catch (err) {
 console.log("klaida", err);
 }
-
+*/
 
     // promisas gali buti 3 busenose: pending - laukimo busena iki resolve arba reject busenu, resolve - patvirtinta, reject - atmestas 
     // viskas vyksta vieno evento ribose
@@ -29,30 +29,38 @@ async function suma (a, b) {
     return a + b;   
 }
 
+let rez = await suma(1, 2);
+console.log(rez + 4)
+
+// await suskaido koda i 2 dalis: tai yra 1) visos komandos iki promiso ir visos komandos po promiso priskiria i then f-j scoupo pabaiga
+
 let reismesPromisas = suma(1, 2);
 console.log(reiksmesPromisas);
 
 reiksmesPromisas.then(reiksme => {
-    console.log(reiksmes + 4);
+    // rez = reiksme + 4;
+    console.log(reiksme + 4);
 });
 
-let
+//console.log(rez);
 
+*/
 
-
+/*
     let rez = await suma(1, 2) + await suma(4, 5);
     console.log(rez + 4);
     console.log("labas");
-    */
-    
-    async function suma (a, b) {
-        return a + b;
-        }
-        let rez = await suma(1, 2) + await suma(4, 5);
+*/
+//3 PAVYZDYS
+
+async function suma (a, b) {
+    return a + b;
+    }
+let rez = await suma(1, 2) + await suma(4, 5);
         console.log(rez + 4);
         console.log("labas");
        
-    // tas pats rezultatas tik su then
+    // tas pats, t.y tolygus rezultatas tik su then
         /*
         suma(1, 2)
         .then(v1 => {
@@ -95,7 +103,7 @@ let
         console.log(rez + 4);
         console.log("labas");
     */
-
+/*
     let duomenys = "";
     try {
         duomenys += await fs.readFile("a.txt");
@@ -105,14 +113,7 @@ let
     } catch (err) {
         console.log("Klaida skaitant is failo:",err);
 
-
-
-
-
-    }
-
-
-    }
+*/
 
 // kiekvienas await sukaido musu programa i then'us
 
@@ -167,7 +168,9 @@ function sumaPromise (a, b) {
         resolve(suma(a, b));
     });
 }
-// asyn grazina promisa, tap kaip f-j su promisu
+// async visada grazina promisa, t.y specialus objekta, tap kaip f-j su promisu; Todel su async f-j turi buti kvieciamos 
+// su await, arba then norint gauti rezultata.
+
 async function sumaAsync (a, b) {
     return a + b;
 }
@@ -181,11 +184,11 @@ console.log(sumaAsync(1, 2));
 
 // specialus modifikatorius async f- j pazymeti async automatiskai grazina promisa (resolvinta arba redzektinta))
 
-
+/*
     let rez = await suma(1, 2) + await suma(4, 5);
     console.log(rez + 4);
     console.log("labas");
-    */
+*/
 
 
 
