@@ -98,10 +98,15 @@ let rez = await suma(1, 2) + await suma(4, 5);
             throw "äs sudedu tik teigiamus skaicius";
         }
         return a + b;
-        }
+    }
+        try {    
         let rez = await suma(1, 2) + await suma(4, 5);
         console.log(rez + 4);
+        } catch (err) {
+        console.log("parskrido klaida: " + err);
+        }
         console.log("labas");
+        // chatch iskrapsto promoso rejecktinimo atmetimo priezasti
     */
 /*
     let duomenys = "";

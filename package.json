@@ -4,7 +4,7 @@
   "description": "",
   "type": "module",
    "scripts": {
-    "start": "node ./src/index1.js",
+    "start": "node ./src/indexnd.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
