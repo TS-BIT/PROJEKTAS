@@ -76,7 +76,7 @@ console.log("Klaida skaitant is failo:", err);
 console.log(duomenys);
 console.log("pabaiga");
 */
-
+/*
 console.log("pradzia");
 
 import * as fs from "fs/promises";
@@ -92,10 +92,6 @@ console.log("Klaida skaitant is failo:", err);
 console.log(s1, s2);
 
 try {
-    //let m = JSON.parse(s);
-    //console.log(m);
-    //m.sort((e1, e2) => e1.length - e2.length);
-    //console.log(m);
     let m1 = JSON.parse(s1);
     let m2 = JSON.parse(s2);
     console.log(m1, m2);
@@ -108,7 +104,7 @@ try {
 }
    
 console.log("pabaiga");
-
+*/
 /*
 Ats:
 pradzia
