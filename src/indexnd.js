@@ -79,7 +79,6 @@ console.log("pabaiga");
 
 console.log("pradzia");
 
-
 import * as fs from "fs/promises";
 
 let s1 = "";
@@ -91,11 +90,16 @@ s2 += await fs.readFile("failas2.json");
 console.log("Klaida skaitant is failo:", err);
 }
 console.log(s1, s2);
+
 try {
+    //let m = JSON.parse(s);
+    //console.log(m);
+    //m.sort((e1, e2) => e1.length - e2.length);
+    //console.log(m);
     let m1 = JSON.parse(s1);
     let m2 = JSON.parse(s2);
     console.log(m1, m2);
-    let m = m1 + m2;
+    let m = m1.concat(m2);
     console.log(m);
     m.sort((e1, e2) => e1.length - e2.length);
     console.log(m);
@@ -104,3 +108,51 @@ try {
 }
    
 console.log("pabaiga");
+
+/*
+Ats:
+pradzia
+
+[ "pirmadienis", "antradienis", "treciadienis", "ketvirtadienis", "penktadienis" ]
+
+ [ "sestadienis", "sekmadienis", "gimtadienis", "vardadienis", "sventadienis" ]
+[
+  'pirmadienis',
+  'antradienis',
+  'treciadienis',
+  'ketvirtadienis',
+  'penktadienis'
+] [
+  'sestadienis',
+  'sekmadienis',
+  'gimtadienis',
+  'vardadienis',
+  'sventadienis'
+]
+[
+  'pirmadienis',
+  'antradienis',
+  'treciadienis',
+  'ketvirtadienis',
+  'penktadienis',
+  'sestadienis',
+  'sekmadienis',
+  'gimtadienis',
+  'vardadienis',
+  'sventadienis'
+]
+[
+  'pirmadienis',
+  'antradienis',
+  'sestadienis',
+  'sekmadienis',
+  'gimtadienis',
+  'vardadienis',
+  'treciadienis',
+  'penktadienis',
+  'sventadienis',
+  'ketvirtadienis'
+]
+
+pabaiga
+*/

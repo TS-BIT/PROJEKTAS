@@ -106,7 +106,7 @@ let rez = await suma(1, 2) + await suma(4, 5);
         console.log("parskrido klaida: " + err);
         }
         console.log("labas");
-        // chatch iskrapsto promoso rejecktinimo atmetimo priezasti
+        // chatch iskrapsto promiso rejecktinimo atmetimo priezasti
     */
 /*
     let duomenys = "";
