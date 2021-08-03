@@ -1,3 +1,4 @@
+"use strict";
 /*
 const fs = require("fs");
 
@@ -27,30 +28,152 @@ priskirtumet vienam kintamajam butent tokia tvarka
 ir atspausdintumet to kintojo reiksme
 */
 
+import * as fs from "fs";
 
-const fs = require("fs");
+//const fs = require("fs");
 
 console.log("start");
 
-let snd = ""
+let snd = ""; 
 fs.readFile("and.txt", (err, data) => {
     if (err) {
         console.log("Klaida", err);
         return;
     }
-    snd += data; 
+    snd += data;
     console.log(snd);
+    fs.readFile("bnd.txt", (err, data) => {
+        if (err) {
+            console.log("Klaida", err);
+            return;
+        }
+        snd += data;
+        console.log(snd);
+        fs.readFile("cnd.txt", (err, data) => {
+            if (err) {
+                console.log("Klaida", err);
+                return;
+            }
+            snd += data;
+            console.log(snd);
+            let mnd = snd.split(" ");
+            console.log(mnd);
+            mnd.sort((e1, e2) => e1.length - e2.length);
+            console.log(mnd);
+        });
+    });
 });
 
+console.log("finish");
+
+/*
 fs.readFile("bnd.txt", (err, data) => {
     if (err) {
         console.log("Klaida", err);
         return;
     }
-    snd = 
+    snd += 
     console.log("" + data);
 });
 console.log("finish");
+*/
+/*
+const fs = require("fs");
+let s = "";
+fs.readFile("4.txt", (err, data) => {
+    s += data;
+    // let a = ("" + data);
+    fs.readFile("3.txt", (err, data) => {
+        s += " " + data;
+        // let b = ("" + data);
+        fs.readFile("1.txt", (err, data) => {
+            s += " " + data;
+            console.log(s);
+            let m = s.split(" ");
+            // let c = ("" + data);
+            //  let m = [a, b, c];
+            m.sort((e1, e2) => e1.length - e2.length);
+            console.log(m);
+            fs.readFile("5.txt", (err, data) => {
+                console.log("" + data);
+                fs.readFile("2.txt", (err, data) => {
+                    console.log("" + data);
+                });
+            });
+        });
+    });
+});
+*/
+
+/*
+const fs = require("fs");
+let s = "";
+fs.readFile("4.txt", (err, data) => {
+s += data;
+fs.readFile("3.txt", (err, data) => {
+s += " " + data;
+fs.readFile("1.txt", (err, data) => {
+s += " " + data;
+let m = s.split(" ");
+m.sort((e1, e2) => e1.length - e2.length);
+console.log(m);
+fs.readFile("5.txt", (err, data) => {
+console.log("" + data);
+fs.readFile("2.txt", (err, data) => {
+console.log("" + data);
+});
+});
+});
+});
+});
+*/
+
+
+
+
+
+
+
+/*
+Ats: 
+
+[ 'pirmas', 'trecias', 'ketvirtas' ]
+penktas
+antras
+*/
+
+
+/*
+const fs = require("fs");
+let s = "";
+fs.readFile("4.txt", (err, data) => {
+    s += data;
+    // let a = ("" + data);
+    fs.readFile("3.txt", (err, data) => {
+        s += " " + data;
+        // let b = ("" + data);
+        fs.readFile("1.txt", (err, data) => {
+            s += " " + data;
+            console.log(s);
+            let m = s.split(" ");
+            // let c = ("" + data);
+            //  let m = [a, b, c];
+            m.sort((e1, e2) => e1.length - e2.length);
+            console.log(m);
+            fs.readFile("5.txt", (err, data) => {
+                console.log("" + data);
+                fs.readFile("2.txt", (err, data) => {
+                    console.log("" + data);
+                });
+            });
+        });
+    });});
+*/
+
+
+
+
+
 
 
 
