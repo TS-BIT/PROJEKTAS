@@ -41,3 +41,6 @@ console.log("finish");
 });
 
 //Ka reiskia promisifainta f-ja
+
+
+
