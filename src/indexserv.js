@@ -5,6 +5,7 @@ import * as path from "path";
 const WEB_DIR = "web";
 
 let server = new Server((socket) => {
+    console.log("atejo uzklausa");
     socket.setEncoding("utf-8");
     let allData = "";
     socket.on("data", async (data) => {
